@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context=".MainActivity"
+    android:background="@color/window_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:background="@color/io_background"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="monospace"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Ainun dan Rido"
+            android:textColor="@color/green"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="monospace"
+            />
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+          android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/text_main"
+            android:fontFamily="sans-serif-light"
+            android:background="@color/text_bg"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="end"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:textSize="50sp"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/green"
+            tools:text="0"
+            android:background="@drawable/rounded_corner"
+            />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+
+        >
+
+        <TableRow>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_buka_kurung"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+
+                android:text="(" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_tutup_kurung"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:text=")" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_croxx"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                android:paddingLeft="40dp"
+                app:icon="@drawable/outline_backspace_24"
+                app:iconSize="30sp"
+                app:iconTint="@color/red"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:text="C"
+
+                />
+
+        </TableRow>
+        <TableRow>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_persen"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+
+                android:text="%" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="." />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_unary"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                style="@style/Button_Style"
+               android:text="U..."
+
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_bitwise"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+
+                android:text="B..."
+
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="7" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="8" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="9" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_kali"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="×" />
+        </TableRow>
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="4" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="5" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="6" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="+" />
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_kurang"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="-" />
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="0" />
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_bagi"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="÷" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_hasil"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                style="@style/Button_Style"
+                android:textColor="@color/white"
+                android:background="@color/green"
+
+                android:textStyle="bold"
+                android:text="=" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

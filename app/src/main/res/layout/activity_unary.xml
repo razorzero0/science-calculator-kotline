@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/window_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:background="@color/io_background"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="monospace"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Ainun dan Rido"
+            android:textColor="@color/green"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="monospace"
+            />
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/text_main"
+            android:fontFamily="sans-serif-light"
+            android:background="@color/text_bg"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="end"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:textSize="50sp"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/green"
+            tools:text="0"
+            android:background="@drawable/rounded_corner"
+            />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+
+        >
+
+        <TableRow>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="sin" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_cos"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="cos">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_croxx"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                android:paddingLeft="40dp"
+                app:icon="@drawable/outline_backspace_24"
+                app:iconSize="30sp"
+                app:iconTint="@color/red"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:text="C"
+
+                />
+
+        </TableRow>
+        <TableRow>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_tan"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="tan" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_tangent"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="tg" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_bitwise"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                style="@style/Button_Style"
+                android:text="B..."
+
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_main"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+
+                android:text="..."
+
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_cotangent"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="ctg" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_secant"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="sec" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_cosecant"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="csc" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_trigonometri_invers_sine"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textAllCaps="false"
+                android:text="asin" />
+        </TableRow>
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_invers_cosin"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="acos" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_invers_tangent"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="atg" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_trigonometri_invers_cotangent"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="actg" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_natural_logarithm"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textAllCaps="false"
+                android:text="ln" />
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_binary_logarithm2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="log2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_degree_to_radians"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="rad" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_radians_to_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:text="deg" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_pi"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textAllCaps="false"
+                android:text=" π" />
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_sigma"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:textColor="@color/green"
+                android:text="∑" />
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/green"
+                android:id="@+id/button_coma"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                style="@style/Button_Style"
+                android:text="," />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_hasil"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                style="@style/Button_Style"
+                android:textColor="@color/white"
+                android:background="@color/green"
+
+                android:textStyle="bold"
+                android:text="=" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

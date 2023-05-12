@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="lower2"><![CDATA[<<]]></string>
+    <string name="greater2"><![CDATA[>>]]></string>
+    <string name="lower_greater2"><![CDATA[<>]]></string>
+    <string name="lower"><![CDATA[<]]></string>
+    <string name="greater"><![CDATA[>]]></string>
+    <string name="lower_equal"><![CDATA[<=]]></string>
+    <string name="greater_equal"><![CDATA[>=]]></string>
+</resources>
